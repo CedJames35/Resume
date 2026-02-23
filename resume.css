@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+/* Top Section Styles */
+.top-section {
+    background-color: #2c3e50;
+    color: white;
+    padding: 30px;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+}
+
+.personal-info h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact-item {
+    font-size: 0.9em;
+}
+
+/* Main Content Layout */
+.main-content {
+    display: flex;
+    padding: 30px;
+    gap: 30px;
+}
+
+/* Left Section Styles */
+.left-section {
+    flex: 1;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.left-section h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 1.3em;
+}
+
+.skills-container, .languages-container{
+    margin-bottom: 30px;
+}
+
+.skills-list, .languages-list{
+    list-style: none;
+}
+
+.skills-list li, .languages-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Right Section Styles */
+.right-section {
+    flex: 2;
+}
+
+.right-section h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 1.3em;
+}
+
+.experience-container, .education-container {
+    margin-bottom: 30px;
+}
+
+.experience-item, .education-item {
+    margin-bottom: 25px;
+}
+
+.experience-item h3, .education-item h3 {
+    color: #2c3e50;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+.company-name, .institution-name {
+    font-weight: bold;
+    color: #3498db;
+}
+
+.date {
+    color: #7f8c8d;
+    font-size: 0.9em;
+    margin: 5px 0;
+}
+
+.responsibilities {
+    list-style-position: inside;
+    margin-top: 10px;
+}
+
+.responsibilities li {
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.description {
+    color: #555;
+    font-style: italic;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2c3e50;
+    color: white;
+    font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .contact-info {
+        justify-content: center;
+    }
+    
+    .main-content {
+        flex-direction: column;
+    }
+}
